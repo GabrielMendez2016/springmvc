@@ -14,6 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springframework.version>5.3.8</springframework.version>
+		<hibernate.version>5.5.7.Final</hibernate.version>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
@@ -63,6 +64,18 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+		<!-- hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>${hibernate.version}</version>
+		</dependency>
+		<!-- postgres driver -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.2.23</version>
+		</dependency>
 	</dependencies>
 
 	<build>
