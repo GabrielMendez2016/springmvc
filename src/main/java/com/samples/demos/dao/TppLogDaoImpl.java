@@ -6,21 +6,21 @@ import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.samples.demos.model.User;
+import com.samples.demos.model.TppLog;
 
 @Repository
 @Transactional
-public class UserDaoImpl extends AbstractDao<Long, User> implements UserDao {
+public class TppLogDaoImpl extends AbstractDao<Long, TppLog> implements TppLogDao {
 
 	@Override
-	public User findById(Long id) {
+	public TppLog findById(Long id) {
 		return getByKey(id);
 	}
 
 	@Override
-	public List<User> findAllUsers() {
+	public List<TppLog> findAllLogs() {
 		Criteria criteria = createEntityCriteria();
-        return (List<User>) criteria.list();
+        return (List<TppLog>) criteria.list();
 	}
 
 }

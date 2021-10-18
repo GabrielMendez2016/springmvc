@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.samples.demos.model.User;
+import com.samples.demos.model.TppLog;
 
-public interface UserDao {
+public interface TppLogDao {
 	
-	User findById(Long id);
-	List<User> findAllUsers();
+	TppLog findById(Long id);
+	List<TppLog> findAllLogs();
 	 
 //    void saveUser(User user);
 //     
